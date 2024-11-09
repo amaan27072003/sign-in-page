@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+
+
+
+    <div class="wrapper">
+        <div class="bg-animate" id="bg-animate"></div>
+        <div class="curved" id="curved"></div>
+      <div class="form-wrapper sign-in">
+        <form action="" name="signInForm" onsubmit="return validateSignInForm()">
+          <h2>Sign In</h2>
+
+          <div class="input-box">
+            <input type="text" required/>
+            <label id="username">Username</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required/>
+            <label id="password">password</label>
+          </div>
+          <div class="forget-pass">
+            <a href="forget.html"onclick="forget password">Forget password?</a>
+          </div>
+          <button type="submit">Sign In</button>
+          <div class="sign-link">
+            <p>Don't have any account?<a href="#" onclick="activeSignUp()"> Sign Up</a></p>
+          </div>
+          <div class="social-platform">
+            <p>Or sign in with</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://myaccount.google.com/?pli=1"><i class="fa-brands fa-google"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                
+            </div>
+          </div>
+        </form>
+      </div>
+
+         
+<!-- /sign up/ -->
+
+
+
+      <div class="form-wrapper sign-up">
+        <form action="" name="signUpForm" onsubmit="return validateSignUpForm()">
+          <h2>Sign Up</h2>
+
+          <div class="input-box">
+            <input type="text" required/>
+            <label id="username">Username</label>
+          </div>
+
+          <div class="input-box">
+            <input type="email" required/>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <input type="password" required/>
+            <label id="password">password</label>
+          </div>
+          <button type="submit">Sign Up</button>
+          <div class="sign-link">
+            <p>Already have any account?<a href="#" onclick="activeSignIn()"> Sign In</a></p>
+          </div>
+          
+        </form>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="colors">
+        <span onclick ="changecolor('#77dd77')" class="color" style="--clr:#77dd77;"></span>
+        <span onclick ="changecolor('#f67599')" class="color" style="--clr:#f67599;"></span>
+        <span onclick ="changecolor('#976ed7')" class="color active" style="--clr:#976ed7;"></span>
+        <span onclick ="changecolor('#1db9c3')" class="color" style="--clr:#1db9c3;"></span>
+        <span onclick ="changecolor('#ffb347')" class="color" style="--clr:#ffb347;"></span>
+    </div> -->
+
+
+
+  
+
+
+
+
+   <script src="script.js"></script>
+  </body>
+</html>
